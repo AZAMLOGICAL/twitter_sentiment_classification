@@ -1,0 +1,14 @@
+pandas
+numpy
+plotly
+nltk
+textblob
+unidecode
+scikit-learn
+tensorflow
+gensim
+scipy
+ipykernel
+nbformat
+transformers
+ipywidgets

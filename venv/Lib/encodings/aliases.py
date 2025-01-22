@@ -209,7 +209,6 @@ aliases = {
     'ms932'              : 'cp932',
     'mskanji'            : 'cp932',
     'ms_kanji'           : 'cp932',
-    'windows_31j'        : 'cp932',
 
     # cp949 codec
     '949'                : 'cp949',
@@ -451,7 +450,6 @@ aliases = {
 
     # mac_latin2 codec
     'maccentraleurope'   : 'mac_latin2',
-    'mac_centeuro'       : 'mac_latin2',
     'maclatin2'          : 'mac_latin2',
 
     # mac_roman codec
@@ -494,6 +492,9 @@ aliases = {
     'shiftjisx0213'      : 'shift_jisx0213',
     'sjisx0213'          : 'shift_jisx0213',
     's_jisx0213'         : 'shift_jisx0213',
+
+    # tactis codec
+    'tis260'             : 'tactis',
 
     # tis_620 codec
     'tis620'             : 'tis_620',

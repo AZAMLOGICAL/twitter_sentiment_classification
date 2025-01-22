@@ -1,6 +1,6 @@
 {
  "argv": [
-  "c:/USERS/ENGMA/DESKTOP/PROJECTS/TWITTER_SENTIMENT_CLASSIFICATION/VENV\\python.exe",
+  "python",
   "-m",
   "ipykernel_launcher",
   "-f",

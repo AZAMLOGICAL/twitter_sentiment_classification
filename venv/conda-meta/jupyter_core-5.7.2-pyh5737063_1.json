@@ -33,16 +33,16 @@
     "Lib/site-packages/jupyter_core/utils/__init__.py",
     "Lib/site-packages/jupyter_core/version.py",
     ".nonadmin",
-    "Lib/site-packages/__pycache__/jupyter.cpython-313.pyc",
-    "Lib/site-packages/jupyter_core/__pycache__/__init__.cpython-313.pyc",
-    "Lib/site-packages/jupyter_core/__pycache__/__main__.cpython-313.pyc",
-    "Lib/site-packages/jupyter_core/__pycache__/application.cpython-313.pyc",
-    "Lib/site-packages/jupyter_core/__pycache__/command.cpython-313.pyc",
-    "Lib/site-packages/jupyter_core/__pycache__/migrate.cpython-313.pyc",
-    "Lib/site-packages/jupyter_core/__pycache__/paths.cpython-313.pyc",
-    "Lib/site-packages/jupyter_core/__pycache__/troubleshoot.cpython-313.pyc",
-    "Lib/site-packages/jupyter_core/utils/__pycache__/__init__.cpython-313.pyc",
-    "Lib/site-packages/jupyter_core/__pycache__/version.cpython-313.pyc",
+    "Lib/site-packages/__pycache__/jupyter.cpython-38.pyc",
+    "Lib/site-packages/jupyter_core/__pycache__/__init__.cpython-38.pyc",
+    "Lib/site-packages/jupyter_core/__pycache__/__main__.cpython-38.pyc",
+    "Lib/site-packages/jupyter_core/__pycache__/application.cpython-38.pyc",
+    "Lib/site-packages/jupyter_core/__pycache__/command.cpython-38.pyc",
+    "Lib/site-packages/jupyter_core/__pycache__/migrate.cpython-38.pyc",
+    "Lib/site-packages/jupyter_core/__pycache__/paths.cpython-38.pyc",
+    "Lib/site-packages/jupyter_core/__pycache__/troubleshoot.cpython-38.pyc",
+    "Lib/site-packages/jupyter_core/utils/__pycache__/__init__.cpython-38.pyc",
+    "Lib/site-packages/jupyter_core/__pycache__/version.cpython-38.pyc",
     "Scripts/jupyter-script.py",
     "Scripts/jupyter-migrate-script.py",
     "Scripts/jupyter-troubleshoot-script.py",
@@ -197,43 +197,43 @@
         "size_in_bytes": 538
       },
       {
-        "_path": "Lib/site-packages/__pycache__/jupyter.cpython-313.pyc",
+        "_path": "Lib/site-packages/__pycache__/jupyter.cpython-38.pyc",
         "path_type": "pyc_file"
       },
       {
-        "_path": "Lib/site-packages/jupyter_core/__pycache__/__init__.cpython-313.pyc",
+        "_path": "Lib/site-packages/jupyter_core/__pycache__/__init__.cpython-38.pyc",
         "path_type": "pyc_file"
       },
       {
-        "_path": "Lib/site-packages/jupyter_core/__pycache__/__main__.cpython-313.pyc",
+        "_path": "Lib/site-packages/jupyter_core/__pycache__/__main__.cpython-38.pyc",
         "path_type": "pyc_file"
       },
       {
-        "_path": "Lib/site-packages/jupyter_core/__pycache__/application.cpython-313.pyc",
+        "_path": "Lib/site-packages/jupyter_core/__pycache__/application.cpython-38.pyc",
         "path_type": "pyc_file"
       },
       {
-        "_path": "Lib/site-packages/jupyter_core/__pycache__/command.cpython-313.pyc",
+        "_path": "Lib/site-packages/jupyter_core/__pycache__/command.cpython-38.pyc",
         "path_type": "pyc_file"
       },
       {
-        "_path": "Lib/site-packages/jupyter_core/__pycache__/migrate.cpython-313.pyc",
+        "_path": "Lib/site-packages/jupyter_core/__pycache__/migrate.cpython-38.pyc",
         "path_type": "pyc_file"
       },
       {
-        "_path": "Lib/site-packages/jupyter_core/__pycache__/paths.cpython-313.pyc",
+        "_path": "Lib/site-packages/jupyter_core/__pycache__/paths.cpython-38.pyc",
         "path_type": "pyc_file"
       },
       {
-        "_path": "Lib/site-packages/jupyter_core/__pycache__/troubleshoot.cpython-313.pyc",
+        "_path": "Lib/site-packages/jupyter_core/__pycache__/troubleshoot.cpython-38.pyc",
         "path_type": "pyc_file"
       },
       {
-        "_path": "Lib/site-packages/jupyter_core/utils/__pycache__/__init__.cpython-313.pyc",
+        "_path": "Lib/site-packages/jupyter_core/utils/__pycache__/__init__.cpython-38.pyc",
         "path_type": "pyc_file"
       },
       {
-        "_path": "Lib/site-packages/jupyter_core/__pycache__/version.cpython-313.pyc",
+        "_path": "Lib/site-packages/jupyter_core/__pycache__/version.cpython-38.pyc",
         "path_type": "pyc_file"
       },
       {

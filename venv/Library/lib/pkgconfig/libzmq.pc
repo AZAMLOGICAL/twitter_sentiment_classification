@@ -1,12 +1,12 @@
-prefix=c:/USERS/ENGMA/DESKTOP/PROJECTS/TWITTER_SENTIMENT_CLASSIFICATION/VENV/Library
-exec_prefix=c:/USERS/ENGMA/DESKTOP/PROJECTS/TWITTER_SENTIMENT_CLASSIFICATION/VENV/Library
-libdir=c:/USERS/ENGMA/DESKTOP/PROJECTS/TWITTER_SENTIMENT_CLASSIFICATION/VENV/Library/lib
-includedir=c:/USERS/ENGMA/DESKTOP/PROJECTS/TWITTER_SENTIMENT_CLASSIFICATION/VENV/Library/include
+prefix=c:/Users/engma/Desktop/Projects/twitter_sentiment_classification/venv/Library
+exec_prefix=c:/Users/engma/Desktop/Projects/twitter_sentiment_classification/venv/Library
+libdir=c:/Users/engma/Desktop/Projects/twitter_sentiment_classification/venv/Library/lib
+includedir=c:/Users/engma/Desktop/Projects/twitter_sentiment_classification/venv/Library/include
 
 Name: libzmq
 Description: 0MQ c++ library
 Version: 4.3.5
 Libs: -L${libdir} -lzmq
-Libs.private: 
+Libs.private: -lstdc++ 
 Requires.private: 
 Cflags: -I${includedir} 

@@ -1,4 +1,3 @@
-import atexit
 import errno
 import os
 import selectors
@@ -62,7 +61,7 @@ class ForkServer(object):
 
     def set_forkserver_preload(self, modules_names):
         '''Set list of module names to try to load in forkserver process.'''
-        if not all(type(mod) is str for mod in modules_names):
+        if not all(type(mod) is str for mod in self._preload_modules):
             raise TypeError('module_names must be a list of strings')
         self._preload_modules = modules_names
 
@@ -168,8 +167,6 @@ class ForkServer(object):
 def main(listener_fd, alive_r, preload, main_path=None, sys_path=None):
     '''Run forkserver.'''
     if preload:
-        if sys_path is not None:
-            sys.path[:] = sys_path
         if '__main__' in preload and main_path is not None:
             process.current_process()._inheriting = True
             try:
@@ -240,8 +237,14 @@ def main(listener_fd, alive_r, preload, main_path=None, sys_path=None):
                             break
                         child_w = pid_to_fd.pop(pid, None)
                         if child_w is not None:
-                            returncode = os.waitstatus_to_exitcode(sts)
-
+                            if os.WIFSIGNALED(sts):
+                                returncode = -os.WTERMSIG(sts)
+                            else:
+                                if not os.WIFEXITED(sts):
+                                    raise AssertionError(
+                                        "Child {0:n} status is {1:n}".format(
+                                            pid,sts))
+                                returncode = os.WEXITSTATUS(sts)
                             # Send exit code to client process
                             try:
                                 write_signed(child_w, returncode)
@@ -274,8 +277,6 @@ def main(listener_fd, alive_r, preload, main_path=None, sys_path=None):
                                 selector.close()
                                 unused_fds = [alive_r, child_w, sig_r, sig_w]
                                 unused_fds.extend(pid_to_fd.values())
-                                atexit._clear()
-                                atexit.register(util._exit_function)
                                 code = _serve_one(child_r, fds,
                                                   unused_fds,
                                                   old_handlers)
@@ -283,7 +284,6 @@ def main(listener_fd, alive_r, preload, main_path=None, sys_path=None):
                                 sys.excepthook(*sys.exc_info())
                                 sys.stderr.flush()
                             finally:
-                                atexit._run_exitfuncs()
                                 os._exit(code)
                         else:
                             # Send pid to client process
